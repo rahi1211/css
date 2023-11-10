@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      .box {
+        font-size: 62px;
+        text-align: center;
+        background-color: red;
+        color: black;
+        display: none;
+      }
+
+      @media only screen and (max-width: 300px) {
+        /*AGR TUM MIN 0 AND MAX 300 ANDR HO TO TUMRE DISPLAY BLOCK HO JITE GE*/
+        #box-1 {
+          display: block;
+          background-color: cyan;
+        }
+      }
+      @media (max-width: 500px) and (min-width: 300px) {
+        /*AGR TUM MIN 300 AND MAX 500 ANDR HO TO TUMRE DISPLAY BLOCK HO JITE GE*/
+        #box-2 {
+          display: block;
+          background-color: blueviolet;
+        }
+      }
+      @media only screen and (max-width: 800px) and (min-width: 500px) {
+        /*only screen matlb hum sirf screen main yah dikhna chatin hain*/
+        /*AGR TUM MIN 500 AND MAX 800 ANDR HO TO TUMRE DISPLAY BLOCK HO JITE GE*/
+        #box-3 {
+          display: block;
+          background-color: yellow;
+        }
+      }
+      @media (min-width: 500px) {
+        /*AGR TUM MIN 300 AND MAX 0 ANDR HO TO TUMRE DISPLAY BLOCK HO JITE GE*/
+        #box-4 {
+          display: block;
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box-1">Mai Ek iphone Hoon</div>
+    <div class="box" id="box-2">Mai Ek Tablet hoon</div>
+    <div class="box" id="box-3">Mai Ek Computer Hoon</div>
+    <div class="box" id="box-4">Mai Ek widesreen Computer Hoon</div>
+  </body>
+</html>

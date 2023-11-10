@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /*border: 2px solid red;*/  
+            background-color: burlywood;
+            box-shadow: 10px 13px green; /*this is how you can add box shadow*/                               
+            /*box syantax box-shadow: offest -x offest-y coloer */
+
+            box-shadow: -10px -13px green; /*negtive numbers me shadow uper lag jai ge*/
+
+            box-shadow: 7px 5px 10px green; /*this is how you can add  blood radius box shadow*/  
+            /*box syantax box-shadow: offest -x offest-y coloer blood redius */ 
+
+
+            box-shadow: 7px 5px 10px 10px green; /*this is how you can add  spread radius box shadow*/
+           /*box syantax box-shadow: offest -x offest-y blood redius and spread redius */
+
+           box-shadow: inset 3px 5px green,4px 6px red ; /*andr ka tarf redius ko kr deta hai*/
+           /*multiple be de skte hain*/
+     
+
+        }
+        /*now text shadow*/
+
+        .card h2{
+            text-shadow: 3px 4px red;
+            text-shadow: 3px 4px white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-">
+            <h2>this is c++ couse</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quaerat, quibusdam, quidem,
+                voluptates, quasi, quod, quaerat, quibusdam, quidem.</p>
+
+        </div>
+        <div class="card" id="card-">
+            <h2>this is html coure</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nostrum ducimus vitae ipsa nam provident
+                distinctio voluptate temporibus, nobis delectus unde dolor saepe</p>
+
+        </div>
+        <div class="card" id="card-">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nostrum ducimus vitae ipsa nam provident
+                distinctio voluptate temporibus, nobis delectus unde dolor saepep</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

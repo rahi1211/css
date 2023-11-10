@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Before and After Pseudo Selectors</title>
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file:///C:/Users/rahel/AppData/Local/Temp/Temp71cd96b3-a6ea-4b0e-9b0d-f213ca68ae95_wetransfer_font-collection_2023-10-15_2034.zip/Font%20Collection/Oferta%20Do%20Dia/Read%20me%20-Terms.pdf">
+
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        header::before {
+            background: url('https://picsum.photos/200/300')no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .navi {
+            font-family: font-family 'Roboto' sans-serif;
+            font-size: 20px;
+            display: flex;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            height: 344px;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto' sans-serif;
+        }
+        p{
+            @font-face{
+                font-family:'HV Cocktail Regular';
+                src: url("C:\Users\rahel\OneDrive\Downloads\wetransfer_font-collection_2023-10-15_2034.zip Font Collection HV.Cocktail");
+            }
+        }
+
+        /*section::before{
+                content: "This is Content"; /*ab yeh section sy pehle aa jai ga*/
+        /* }
+         section::after{
+            content: "This is Content"; /*ab yah section ka bad aai ga
+        }*/
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navi">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Well To Conding World</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, aliquid natus ratione quis adipisci vel
+            itaque molestias necessitatibus. Nesciunt ab animi dolor natus, a minus excepturi possimus impedit
+            molestias, eveniet aliquam veritatis distinctio?</p>
+    </section>
+    <hr> <!-- ase ek line aa jai ge -->
+</body>
+
+</html>

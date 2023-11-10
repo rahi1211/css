@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Creating Animations & Keyframes </title>
+    <style>
+        .container {
+            background-color: greenyellow;
+        }
+
+        .box {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /*animation-name: rahi1;*/
+            animation-name: rahi2;
+            animation-duration: 8s;
+            animation-iteration-count: 1;
+            /*animation-fill-mode: forwards;
+         /*   animation-timing-function: ease-in; /*strat me slow aai ga then spped me chla jai ga*/
+            /*ease-out me ulta hoga*/
+            /*animation-delay: 3s; 3s wait krke ka phe chale ga*/
+            /*/animation-direction:reverse; /*reverse me ulta chale ga*/ 
+            animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; /*asa ek line me anition likh skte ho*/ 
+        }
+        @keyframes rahi2{
+              0%{
+                   top: 0px;
+                   left: 0px;
+              }
+              25%{
+                   top: 250px;
+                   left: 0px;
+              }
+              75%{
+                  top:250px;
+                  left: 250px;
+              }
+              100%{
+                    top: 0px;
+                    left: 250px;
+              }
+        }
+
+        @keyframes rahi1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+            width: 1400px;  
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            this is a box
+        </div>
+    </div>
+</body>
+
+</html>

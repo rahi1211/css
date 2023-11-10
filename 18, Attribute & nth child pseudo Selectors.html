@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attribute & nth child pseudo Selectors</title>
+  <style>
+    .container {
+      display: block;
+      width: 233px;
+      margin: auto;
+    }
+
+    input {
+      display: block;
+    }
+
+    input[type='text'] {
+      /*text input ko asa select krti hain os input ko jiks type sirf text hai*/
+      padding: 23px;
+      border: 2px solid red;
+    }
+
+    a[target] {
+      /*yeh os py lago ho gai jiks ka os anker tag me jiska target set hai*/
+      font-size: 44px;
+      color: violet;
+    }
+
+    a[target='_self'] {
+      font-size: 47px;
+      color: blue;
+      
+    }
+    input[type="email"] {
+      color: cyan;
+      border: 2px solid black;
+    }
+    li:nth-child(3){
+      color: greenyellow; /*jo mera tesra item hai hai osko py laga dega*/
+
+    }
+    li:nth-child(2n+0){
+      color: hotpink; /*har 2sre element py yeh lagoo ho jai*/
+    }
+
+    li:nth-child(odd){
+      color: gold; /*odd py lagoo ho jai ge*/
+
+    }
+    li:nth-child(evem){
+      color: chartreuse; /*even py lagoo kar dega*/
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1><a href="http://google" target="_blank">go to google</a></h1>
+    <h1><a href="http://facebook.com" target="_self">go to facebook</a></h1>
+    <form action="" class="form-controll">
+      <input type="text" placeholder="enter your name" />
+      <input type="password" placeholder="enter your password" />
+      <input type="email" placeholder="enter your email" />
+      <input type="submit" value="summit" />
+    </form>
+    <ul>
+      <li class="item" id="item1">item1</li>
+      <li class="item" id="item2">item2</li>
+      <li class="item" id="item3">item3</li>
+      <li class="item" id="item4">item4</li>
+      <li class="item" id="item5">item5</li>
+    </ul>
+  </div>
+</body>
+
+</html>
